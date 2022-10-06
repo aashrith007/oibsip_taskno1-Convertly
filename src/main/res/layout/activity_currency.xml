@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgm"
+    tools:context=".currency">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency"
+        android:textSize="20dp"
+        android:textColor="@color/light_white"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toTopOf="@+id/entercurr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/entercurr"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/ustoinr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ustoinr"
+        android:layout_width="284dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="44dp"
+        android:text="Dollar to Rupees"
+        android:background="@drawable/bgmi"
+        android:textColor="@color/light_white"
+        app:layout_constraintBottom_toTopOf="@+id/inrtous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/inrtous"
+        android:layout_width="287dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="396dp"
+        android:text="Rupees To Dollar"
+        android:background="@drawable/bgmi"
+        android:textColor="@color/light_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/res4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="356dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="228dp"
+        android:layout_height="224dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        android:alpha="0.3"
+        app:srcCompat="@drawable/currency" />
+</androidx.constraintlayout.widget.ConstraintLayout>

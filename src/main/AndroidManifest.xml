@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unitconvertor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/playstore"
+        android:label="Any Converter"
+        android:roundIcon="@drawable/playstore"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UnitConvertor">
+        <activity
+            android:name=".area"
+            android:exported="false" />
+        <activity
+            android:name=".currency"
+            android:exported="false" />
+        <activity
+            android:name=".Time"
+            android:exported="false" />
+        <activity
+            android:name=".Speed_conv"
+            android:exported="false" />
+        <activity
+            android:name=".weight_conv"
+            android:exported="false" />
+        <activity
+            android:name=".Temp_conv"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
